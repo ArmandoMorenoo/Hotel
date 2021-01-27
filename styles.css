@@ -1,0 +1,244 @@
+* {box-sizing: border-box;
+    margin: 0;
+    padding: 0;}
+
+body {background-color:black;
+        color: blanchedalmond;
+        background-image: url(./img/DARK.png);
+        font-size: 16px;
+        background-size: 100px;}
+
+
+a {color: white;
+    text-decoration: none;}
+
+
+ul {list-style: none;}
+
+
+.conteiner {width: 90%;
+            margin: auto;}
+
+
+/* Navigation */
+.nav-main {font-size: 17px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+            padding: 20px 0;
+            margin-top: 60px;
+            font-family: 'Oswald', sans-serif;}
+
+.nav-brand {width: 250px;
+                padding: 25px;
+                margin-bottom: 55px;
+                margin-top: 15px;
+                border-radius: 100%;}
+
+
+/* NAV LEFT */
+.nav-main ul {display: flex;}
+
+.nav-main ul li {padding: 10px;}
+
+.nav-main ul li a {padding: 6px;}
+
+.nav-main ul li a:hover {border-bottom: 2px solid red;}
+
+.nav-main ul .nav-menu {flex: 1;
+                        margin-left: 20px;}
+
+
+/* SHOWCASE */
+hr {margin: 20px 0;}
+
+.showcase {width: 100%;
+            height: 550px;
+            background: url(./img/vista.jpg) no-repeat center center/cover;
+            color: black;
+            padding: 200px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            text-align: left;
+            margin-bottom: 20px;}
+
+
+
+.showcase h2 {font-size: 40px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color:black;}
+                
+.showcase p {font-size: 17px;}
+
+.showcase a {margin-bottom: 50px;}
+
+.btn {cursor: pointer;
+        display: inline-block;
+        border: 0;
+        font-weight: bold;
+        padding: 10px 20px;
+        background: #262626;
+        color: #ffffff;
+        font-size: 15px;
+        border: 1px solid black;
+        margin: 10px 0;}
+
+.btn:hover {opacity: .7;}
+
+.showcase h2,
+.showcase p {margin-bottom: 10px;}
+
+
+/* NEWS CARDS */
+.news-cards {display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 25px;
+            margin: 2px 0;
+            font-size: 13px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+
+.news-cards-two {position: relative;
+                overflow: hidden;}
+
+.news-cards-two h3,
+.news-cards-two p,
+.news-cards-two a i,
+.news-cards-two a .circulo,
+.news-cards-two a {position: relative;
+                   z-index: 1;}
+
+.news-cards img {width: 100%;
+                height: 180px;}
+
+.news-cards h3 {font-size: 20px;
+                margin: 10px 0;
+                font-family: 'Oswald', sans-serif;}
+
+.news-cards a {padding: 10px 0;
+                color: #f2f2f2;
+                display: inline-block;
+                font-weight: bold;}
+
+.news-cards a:hover {text-decoration: underline rgb(201, 31, 31);}
+
+/* MAPA */
+.mapa {margin: 50px;}
+
+.mapa iframe {width: 100%;
+             margin-bottom: 50px;}
+
+.parrafo-del-mapa {font-size: 30px;
+                  display: flex;
+                  justify-content: center ;
+                  font-family: 'Times New Roman', Times, serif; 
+                  margin-bottom: 40px;
+                  border-bottom: indianred solid 3px;}
+
+/* EFECTO HOVER DE LAS CAJAS ONE */
+.news-cards-two .circulo-rojo {width: 100px;
+                                height: 100px;
+                                background: red;
+                                position: absolute;
+                                top: 250px;
+                                left: -170px;
+                                border-radius: 100%;
+                                transition: all 700ms;
+                                background: linear-gradient(to bottom, rgba(238, 13, 13, 0.671), rgb(148, 11, 167));}
+
+.news-cards-two:hover .circulo-rojo {width: 400px;
+                                    height: 400px;
+                                    top: -70px;
+                                    left: -70px;}
+
+
+/* CARDS BANNER ONE */
+.cards-banner-one {width: 100%;
+                    height: 450px;
+                    background: url(./img/vista.jpg) no-repeat center center/cover;
+                    margin-bottom: 100px;}
+
+.cards-banner-one .content {width: 40%;
+                            padding: 90px 0 0 30px;
+                            color: black;
+                            font-family: 'Times New Roman', Times, serif;}
+
+.cards-banner-one h2 {color: black;
+                        font-family: 'Times New Roman', Times, serif;}
+
+.cards-banner-one p,
+.cards-banner-one h2 {margin: 10px 0 20px 0;}
+
+
+/* CARDS BANNER TWO*/
+.cards-banner-two {width: 100%;
+                    height: 400px;
+                    background: url(./img/bienvenido.jpg) no-repeat center center/cover;}
+
+.cards-banner-two .content {width: 40%;
+                            padding: 100px 0 0 30px;
+                                color: black;
+                                font-family: 'Times New Roman', Times, serif;}
+
+.cards-banner-two .content h2 {color: black;
+                                font-family: 'Times New Roman', Times, serif;}
+
+
+/* SOCIAL */
+.social {margin: 50px;}
+
+.social p {text-align: center;
+            font-size: 30px;
+            margin-bottom: 20px;}
+
+/* SOCIAL: EFECTO DE ANIMACIÓN */
+.Links {display: flex;
+        align-items: center;
+        justify-content: center;
+        animation-name: mianimacion;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        border-radius: 200%;}
+
+@keyframes mianimacion {0% {background: rgb(190, 59, 15);}
+                        25% {background: rgb(139, 137, 20);} 
+                        50% {background: rgb(187, 88, 7);}
+                        75% {background: rgb(129, 72, 7);}
+                        100% {background: rgb(190, 59, 7);}
+}
+        
+
+.Links a {margin: 0 30px;}
+
+.Links a i {font-size: 3rem;}
+
+
+
+
+/* FOOTER LINKS*/
+.footer-links {background: #2f3640;
+                color: #616161;
+                font-size: 12px;
+                padding: 35px 0;}
+
+.footer-conteiner {display: grid;
+                    grid-template-columns: repeat(5, 1fr);
+                    gap: 10px;
+                    align-items: flex-start;
+                    justify-content: center;}
+    
+.footer-conteiner ul {margin: 0 auto;}
+
+.footer-conteiner ul li {line-height: 2;}
+
+
+/* FOOTER */
+.footer {background: #2d3640;
+        color: #c0c0c0;
+        padding: 20px 0 ;
+        text-align: center;
+        padding-bottom: 20px;
+        margin-bottom: 50px;}
